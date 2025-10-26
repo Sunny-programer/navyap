@@ -1,0 +1,7 @@
+roll,name,cgpa,attendance,behavior_grade,performance_grade,jun,jul,aug,sep,oct,nov,dec,jan,feb,mar,math,physics,chemistry,english,computer
+101,Alice Johnson,8.5,92,A,A,95,90,88,92,94,91,93,89,92,94,85,88,82,90,87
+102,Bob Smith,7.8,85,B,B,88,85,80,87,86,84,89,83,85,88,78,75,80,82,79
+103,Charlie Brown,9.2,96,A,A+,97,95,96,98,95,96,97,94,96,98,92,90,94,91,93
+104,Diana Prince,6.5,72,C,C,75,70,68,72,74,71,73,69,70,74,65,68,62,70,67
+105,Emma Watson,8.0,88,B,A,90,88,85,89,87,86,90,84,87,89,82,80,78,85,83
+

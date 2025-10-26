@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ student.name }} - Academic Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="student-container">
+        <div class="student-header">
+            <button onclick="window.location.href='/'">← Back to Dashboard</button>
+            <h1>Academic Performance Report</h1>
+        </div>
+        
+        <div class="student-info-card">
+            <div class="info-section">
+                <h2>{{ student.name }}</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">Roll Number:</span>
+                        <span class="value">{{ student.roll }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">CGPA:</span>
+                        <span class="value">{{ student.cgpa }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Attendance:</span>
+                        <span class="value">{{ student.attendance }}%</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Behavior Grade:</span>
+                        <span class="value">{{ student.behavior }}</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Performance Grade:</span>
+                        <span class="value">{{ student.performance }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="graph-container">
+            <img src="data:image/png;base64,{{ graph }}" alt="Academic Performance Graphs" class="student-graph">
+        </div>
+    </div>
+</body>
+</html>
+
